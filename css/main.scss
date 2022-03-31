@@ -1,1 +1,40 @@
 @import "./bootstrap/scss/bootstrap";
+
+/*************** HEADER ***************/
+
+.announcement-bar {
+  background-color: #000000;
+  font-size: 12px;
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+
+.site-header__logo {
+  text-align: center;
+
+  img {
+    width: 125px;
+    height: 75px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    text-align: start;
+
+    img {
+      width: 86.66px;
+      height: 52px;
+    }
+  }
+}
+
+
+.main-navigation {
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+
